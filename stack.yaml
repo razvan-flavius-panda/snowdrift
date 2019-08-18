@@ -1,7 +1,7 @@
 flags:
   Snowdrift:
     dev: true
-resolver: lts-9.18
+resolver: lts-13.19
 packages:
   - website
   - crowdmatch
@@ -23,8 +23,19 @@ extra-deps:
   # We'll then just do `stack install codex`.
   - git: https://github.com/aloiscochard/codex.git
     commit: 0d59fe5099136015912e13a4c1ea573c5fd7f2ff
+  - aeson-1.1.2.0@sha256:a405180edbcc2667135e2046c91a1c1074040b8fc70e1f7ec8c5321c66d44c19
+  - errors-2.2.5@sha256:cb7aa52dbee0170183502c589d58fd654778afad9780652281b2ea03b4ed348e
+  - postgresql-simple-0.5.4.0@sha256:d4c28e2e4c4136dfff0bc415c05b28c04089f6b92e7ede2b45a379e1e393ef5e
+  - hlibsass-0.1.6.1@sha256:397692968a8f51fd71f5495f61837ab8ed3186c7b1a2fd1a3d150fc1f1c27667
+  - pwstore-fast-2.4.4@sha256:9b6a37510d8b9f37f409a8ab3babac9181afcaaa3fce8ba1c131a7ed3de30698
+  - time-1.6.0.1@sha256:492067e1b6973db9df64bf0bc851985dabea138d8a35414fe9ee6870b4702c66
+  - yaml-0.8.32@sha256:691cbf4f6a362df5a76464f42e328c99723f3d525767e3a1e78ee112ab723f7a
+  - yesod-1.4.5@sha256:a8334d823523e2d5c088d5642b21800dbca41aef65dad6588ec29d757c5bf1f3
+  - yesod-core-1.4.37.3@sha256:574bcc8079527a5caae88a76f877b09bae7b4bce96ee3537955aff3122baf941
+  - yesod-static-1.5.3.1@sha256:7865f3038b9741e3fd8cffdf8ea36d7406d22588840ed1346d2156575b084a09
+
 nix:
-  enable: false
+  enable: true
   pure: false
   packages:
     - ncurses

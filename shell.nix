@@ -1,5 +1,5 @@
-with import (fetchTarball https://github.com/NixOS/nixpkgs/archive/83b35508c6491103cd16a796758e07417a28698b.tar.gz) {};
-let ghc = haskell.compiler.ghc802;
+with import (fetchTarball https://github.com/NixOS/nixpkgs/archive/3a17a52a2a5f9d7077c1c2273e49062c11e000d4.tar.gz) {};
+let ghc = haskell.compiler.ghc864;
 in haskell.lib.buildStackProject {
   inherit ghc;
   name = "myEnv";
