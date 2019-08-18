@@ -1,11 +1,14 @@
 flags:
   Snowdrift:
     dev: true
+
 resolver: lts-13.19
+
 packages:
   - website
   - crowdmatch
   - run-persist
+
 extra-deps:
   - hashids-1.0.2.3
   - hsass-0.8.0
@@ -15,8 +18,10 @@ extra-deps:
   - stripe-haskell-2.3.0
   # This is patched to use UTCTime instead of Localtime (needs to get moved
   # upstream: see https://gitlab.com/snowdrift/snowdrift/issues/8)
-  - git: https://gitlab.com/snowdrift/postgresql-simple-migration-patches.git
-    commit: 55ae21a7ee5b0386ec7c6909409b1bdacebcc924
+  - git: https://github.com/razvan-panda/postgresql-simple-migration.git
+    commit: 9cd59706b5a9c382d010c479725d0f67f6e574c1
+  - git: https://github.com/razvan-panda/postgresql-simple-migration-patches.git
+    commit: 8c2fc08f898c3a2eb1b55b17d2d5fa342d2b2675
   - git: https://github.com/razvan-panda/shakespeare-sass.git
     commit: ff025aa6aa1e8517c00dc09986391ece35f056e0
   # vvv Not needed?
@@ -29,11 +34,4 @@ extra-deps:
 nix:
   enable: true
   pure: false
-  packages:
-    - ncurses
-    - gmp
-    - gcc
-    - openssl
-    - postgresql96
-    - zlib
-    - gnumake
+  shell-file: shell.nix
