@@ -1,0 +1,6 @@
+packages: ./
+
+source-repository-package
+  type: git
+  location: https://github.com/razvan-panda/postgresql-simple-migration.git
+  tag: 9cd59706b5a9c382d010c479725d0f67f6e574c1

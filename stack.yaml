@@ -15,14 +15,16 @@ extra-deps:
   - stripe-haskell-2.3.0
   # This is patched to use UTCTime instead of Localtime (needs to get moved
   # upstream: see https://gitlab.com/snowdrift/snowdrift/issues/8)
-  # - git: https://gitlab.com/snowdrift/postgresql-simple-migration-patches.git
-  #   commit: 55ae21a7ee5b0386ec7c6909409b1bdacebcc924
+  - git: https://gitlab.com/snowdrift/postgresql-simple-migration-patches.git
+    commit: 55ae21a7ee5b0386ec7c6909409b1bdacebcc924
   - git: https://github.com/razvan-panda/shakespeare-sass.git
     commit: ff025aa6aa1e8517c00dc09986391ece35f056e0
   # vvv Not needed?
-  # - git: https://github.com/aloiscochard/codex.git
-  #   commit: 0d59fe5099136015912e13a4c1ea573c5fd7f2ff
+  - git: https://github.com/aloiscochard/codex.git
+    commit: 0d59fe5099136015912e13a4c1ea573c5fd7f2ff
   - pwstore-fast-2.4.4@sha256:9b6a37510d8b9f37f409a8ab3babac9181afcaaa3fce8ba1c131a7ed3de30698
+  - postgresql-simple-0.5.4.0@sha256:d4c28e2e4c4136dfff0bc415c05b28c04089f6b92e7ede2b45a379e1e393ef5e
+  - time-1.6.0.1@sha256:492067e1b6973db9df64bf0bc851985dabea138d8a35414fe9ee6870b4702c66
 
 nix:
   enable: true
