@@ -68,7 +68,7 @@ library
         -- Snowdrift libs
         , crowdmatch
         -- Other
-        , aeson                  >= 0.6     && < 1.2
+        , aeson                  >= 0.6     && <= 1.4.2.0
         , base64-bytestring
         , blaze-html
         , bytestring             >= 0.9     && < 0.11
@@ -107,11 +107,11 @@ library
         , wai
         , wai-extra              >= 3.0     && < 3.1
         , warp                   >= 3.0     && < 3.3
-        , yaml                   >= 0.8     && < 0.9
-        , yesod                  >= 1.4.1   && < 1.5
-        , yesod-core             >= 1.4.17  && < 1.5
+        , yaml                   >= 0.8     && <= 0.11.0.0
+        , yesod                  >= 1.4.1   && <= 1.6.0
+        , yesod-core             >= 1.4.17  && <= 1.6.14
         , yesod-gitrev
-        , yesod-static           >= 1.4.0.3 && < 1.6
+        , yesod-static           >= 1.4.0.3 && <= 1.6.0.1
     -- }}}2
 
     default-extensions:
