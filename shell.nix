@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
-let ghc = haskell.compiler.ghc864;
+let ghc = haskell.compiler.ghc822;
 in haskell.lib.buildStackProject {
   inherit ghc;
   name = "myEnv";

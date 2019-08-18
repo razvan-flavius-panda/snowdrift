@@ -2,7 +2,7 @@ flags:
   Snowdrift:
     dev: true
 
-resolver: lts-13.19
+resolver: lts-11.22
 
 packages:
   - website
@@ -28,6 +28,9 @@ extra-deps:
   - pwstore-fast-2.4.4@sha256:9b6a37510d8b9f37f409a8ab3babac9181afcaaa3fce8ba1c131a7ed3de30698
   - postgresql-simple-0.5.4.0@sha256:d4c28e2e4c4136dfff0bc415c05b28c04089f6b92e7ede2b45a379e1e393ef5e
   - time-1.6.0.1@sha256:492067e1b6973db9df64bf0bc851985dabea138d8a35414fe9ee6870b4702c66
+  - esqueleto-2.7.0@sha256:4cbb7136ec67d7cedd0439dd6932bb091c346ab27ed3fdf659228b73fb619896
+  - hlibsass-0.1.8.0@sha256:7bcb99f9615f5851c4c906ceb16fd92ce0ec92e66a022ada101d4e2d7efad894
+  - persistent-2.8.2@sha256:df118e99f0c46715e932fe82d787fc09689d87898f3a8b13f5954d25af6b46a1
 
 nix:
   enable: true
