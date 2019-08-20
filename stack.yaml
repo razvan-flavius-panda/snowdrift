@@ -1,11 +1,14 @@
 flags:
   Snowdrift:
     dev: true
-resolver: lts-9.18
+
+resolver: lts-13.19
+
 packages:
   - website
   - crowdmatch
   - run-persist
+
 extra-deps:
   - hashids-1.0.2.3
   - hsass-0.5.0
@@ -23,14 +26,8 @@ extra-deps:
   # We'll then just do `stack install codex`.
   - git: https://github.com/aloiscochard/codex.git
     commit: 0d59fe5099136015912e13a4c1ea573c5fd7f2ff
+
 nix:
-  enable: false
+  enable: true
   pure: false
-  packages:
-    - ncurses
-    - gmp
-    - gcc
-    - openssl
-    - postgresql96
-    - zlib
-    - gnumake
+  shell-file: shell.nix
